@@ -1,0 +1,118 @@
+#bgtest{
+    /*background: url('../images/bg.jpg') #6ABFD4;*/
+    background: #03D1C6;
+    color: white;
+    text-shadow: none;
+    min-height: 700px;
+
+    position: relative;
+}
+.dat-noise {
+    background: url('../images/noise.png') repeat 0 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    zoom: 1;
+}
+@-webkit-keyframes alpha-and-omega {
+    0% {background-position:0% 0%}
+    50% {background-position:300000px 0%}
+    100% {background-position:0px 0%}
+}
+@-moz-keyframes alpha-and-omega {
+    0% {background-position:0% 0%}
+    50% {background-position:300000px 0%}
+    100% {background-position:0px 0%}
+}
+@-o-keyframes alpha-and-omega {
+    0% {background-position:0% 0%}
+    50% {background-position:300000px 0%}
+    100% {background-position:0px 0%}
+}
+@-ms-keyframes alpha-and-omega {
+    0% {background-position:0% 0%}
+    50% {background-position:300000px 0%}
+    100% {background-position:0px 0%}
+}
+@keyframes alpha-and-omega {
+    0% {background-position:0% 0%}
+    50% {background-position:300000px 0%}
+    100% {background-position:0px 0%}
+}
+#stars-1,#stars-2,#stars-3,#stars-4,#stars-5 {
+    position:absolute;
+    top:200px;
+    left:0;
+    right:0;
+    height:400px;
+    margin-top:-30px
+}
+#stars-1 {
+    background:url('../images/stars-1.png') repeat 0 0;
+    -webkit-animation:alpha-and-omega 9000s infinite alternate linear;
+    -moz-animation:alpha-and-omega 9000s infinite alternate linear;
+    -ms-animation:alpha-and-omega 9000s infinite alternate linear;
+    -o-animation:alpha-and-omega 9000s infinite alternate linear;
+    animation:alpha-and-omega 9000s infinite alternate linear;
+    top:260px
+}
+#stars-2 {
+    background:url('../images/stars-2.png') repeat 0 0;
+    -webkit-animation:alpha-and-omega 25000s infinite alternate linear;
+    -moz-animation:alpha-and-omega 25000s infinite alternate linear;
+    -ms-animation:alpha-and-omega 25000s infinite alternate linear;
+    -o-animation:alpha-and-omega 25000s infinite alternate linear;
+    animation:alpha-and-omega 25000s infinite alternate linear;
+    top:100px
+}
+#stars-3 {
+    background:url('../images/stars-3.png') repeat 0 0;
+    -webkit-animation:alpha-and-omega 15000s infinite alternate linear;
+    -moz-animation:alpha-and-omega 15000s infinite alternate linear;
+    -ms-animation:alpha-and-omega 15000s infinite alternate linear;
+    -o-animation:alpha-and-omega 15000s infinite alternate linear;
+    animation:alpha-and-omega 15000s infinite alternate linear;
+    top:250px
+}
+#stars-4 {
+    background:url('../images/stars-4.png') repeat 0 0;
+    -webkit-animation:alpha-and-omega 16000s infinite alternate linear;
+    -moz-animation:alpha-and-omega 16000s infinite alternate linear;
+    -ms-animation:alpha-and-omega 16000s infinite alternate linear;
+    -o-animation:alpha-and-omega 16000s infinite alternate linear;
+    animation:alpha-and-omega 16000s infinite alternate linear;
+    top:120px
+}
+#stars-5 {
+    background:url('../images/stars-5.png') repeat 0 0;
+    -webkit-animation:alpha-and-omega 12000s infinite alternate linear;
+    -moz-animation:alpha-and-omega 12000s infinite alternate linear;
+    -ms-animation:alpha-and-omega 12000s infinite alternate linear;
+    -o-animation:alpha-and-omega 12000s infinite alternate linear;
+    animation:alpha-and-omega 12000s infinite alternate linear;
+    top:300px
+}
+#star-mask-right,#star-mask-left {
+    position:absolute;
+    top:0;
+    height:700px;
+    width:25%
+}
+#star-mask-left {
+    left:0;
+    background-image:-webkit-gradient(linear,0% 50%,100% 50%,color-stop(0%,#00B5AD),color-stop(100%,rgba(10,131,158,0)));
+    background-image:-webkit-linear-gradient(left,#00B5AD 0%,rgba(10,131,158,0) 100%);
+    background-image:-moz-linear-gradient(left,#00B5AD 0%,rgba(10,131,158,0) 100%);
+    background-image:-o-linear-gradient(left,#00B5AD 0%,rgba(10,131,158,0) 100%);
+    background-image:linear-gradient(left,#00B5AD 0%,rgba(10,131,158,0) 100%)
+}
+#star-mask-right {
+    right:0;
+    background-image:-webkit-gradient(linear,0% 50%,100% 50%,color-stop(0%,rgba(10,131,158,0)),color-stop(100%,#00B5AD));
+    background-image:-webkit-linear-gradient(left,rgba(10,131,158,0) 0%,#00B5AD 100%);
+    background-image:-moz-linear-gradient(left,rgba(10,131,158,0) 0%,#00B5AD 100%);
+    background-image:-o-linear-gradient(left,rgba(10,131,158,0) 0%,#00B5AD 100%);
+    background-image:linear-gradient(left,rgba(10,131,158,0) 0%,#00B5AD 100%)
+}
